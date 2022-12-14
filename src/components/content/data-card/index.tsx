@@ -8,7 +8,7 @@ export const DataCard: FC<IDataCard> = ({ title, list, text, id }) => {
       {list && (
         <ul className={s.ul}>
           {list.map((item) => (
-            <li key={id}>{item}</li>
+            <li key={Math.random()}>{item}</li>
           ))}
         </ul>
       )}

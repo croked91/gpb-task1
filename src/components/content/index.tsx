@@ -13,7 +13,7 @@ export const Content = () => {
       <div className={s.content}>
         {data &&
           data.map(({ title, list, text, id }) => (
-            <Container>
+            <Container key={id}>
               <DataCard title={title} list={list} text={text} id={id} />
             </Container>
           ))}
